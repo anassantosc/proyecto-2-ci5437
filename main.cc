@@ -13,6 +13,8 @@
 
 using namespace std;
 
+enum Condition {GEQ, GR};
+
 unsigned expanded = 0;
 unsigned generated = 0;
 int tt_threshold = 32; // threshold to save entries in TT
@@ -36,14 +38,34 @@ class hash_table_t : public unordered_map<state_t, stored_info_t, hash_function_
 
 hash_table_t TTable[2];
 
-//int maxmin(state_t state, int depth, bool use_tt);
-//int minmax(state_t state, int depth, bool use_tt = false);
-//int maxmin(state_t state, int depth, bool use_tt = false);
-int negamax(state_t state, int depth, int color, bool use_tt = false);
+//Algoritmos de busqueda
+int negamax(state_t state, int depth, int color, bool use_tt = false) {
+
+    if (depth == 0 || state.terminal())
+        return color * state.value();
+
+    int score = std::numeric_limits<int>::min();
+    std::vector<state_t> moves = state.get_random_move(color == 1);
+
+    for (int m = 0; m < moves.size(); m++) {
+        generated++;
+        score = max(score, -negamax(moves[m], depth - 1, -color));
+    }
+
+    expanded++;
+    
+    return score;
+};
+
+
+
+
 int negamax(state_t state, int depth, int alpha, int beta, int color, bool use_tt = false);
 int scout(state_t state, int depth, int color, bool use_tt = false);
 int negascout(state_t state, int depth, int alpha, int beta, int color, bool use_tt = false);
 
+
+//Main
 int main(int argc, const char **argv) {
     state_t pv[128];
     int npv = 0;
@@ -97,7 +119,7 @@ int main(int argc, const char **argv) {
 
         try {
             if( algorithm == 1 ) {
-                //value = negamax(pv[i], 0, color, use_tt);
+                value = negamax(pv[i], 0, color, use_tt);
             } else if( algorithm == 2 ) {
                 //value = negamax(pv[i], 0, -200, 200, color, use_tt);
             } else if( algorithm == 3 ) {

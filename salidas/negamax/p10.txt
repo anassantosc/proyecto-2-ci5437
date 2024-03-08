@@ -1,0 +1,37 @@
+Extracting principal variation (PV) with 33 plays ... done!
+Algorithm: Negamax (minmax version) w/ transposition table
+Moving along PV:
+34. White moves: value=-4, #expanded=0, #generated=0, seconds=2.00002e-06, #generated/second=0
+33. Black moves: value=-4, #expanded=1, #generated=1, seconds=8.99995e-06, #generated/second=111112
+32. White moves: value=-4, #expanded=3, #generated=4, seconds=5.00004e-06, #generated/second=799994
+31. Black moves: value=-2147483648, #expanded=1, #generated=0, seconds=2.00002e-06, #generated/second=0
+30. White moves: value=4, #expanded=6, #generated=7, seconds=6.99994e-06, #generated/second=1.00001e+06
+29. Black moves: value=4, #expanded=7, #generated=8, seconds=5.99993e-06, #generated/second=1.33335e+06
+28. White moves: value=4, #expanded=49, #generated=66, seconds=2.20001e-05, #generated/second=2.99999e+06
+27. Black moves: value=4, #expanded=98, #generated=130, seconds=2.8e-05, #generated/second=4.64286e+06
+26. White moves: value=2, #expanded=575, #generated=754, seconds=0.000146, #generated/second=5.16439e+06
+25. Black moves: value=2, #expanded=2361, #generated=3173, seconds=0.000617, #generated/second=5.14263e+06
+24. White moves: value=2, #expanded=6244, #generated=7959, seconds=0.001568, #generated/second=5.07589e+06
+23. Black moves: value=2, #expanded=37532, #generated=48266, seconds=0.009766, #generated/second=4.94225e+06
+22. White moves: value=7, #expanded=131699, #generated=226347, seconds=0.039863, #generated/second=5.67812e+06
+21. Black moves: value=2, #expanded=511796, #generated=1076168, seconds=0.195731, #generated/second=5.4982e+06
+20. White moves: value=-3, #expanded=671505, #generated=1795317, seconds=0.321841, #generated/second=5.57827e+06
+19. Black moves: value=-4, #expanded=1338730, #generated=4252230, seconds=0.742096, #generated/second=5.73003e+06
+18. White moves: value=5, #expanded=3044332, #generated=11484592, seconds=2.05547, #generated/second=5.58733e+06
+17. Black moves: value=-2, #expanded=4725163, #generated=20225163, seconds=3.68095, #generated/second=5.49455e+06
+16. White moves: value=7, #expanded=11996139, #generated=54869867, seconds=9.82149, #generated/second=5.58671e+06
+15. Black moves: value=2, #expanded=23031550, #generated=123459379, seconds=23.7332, #generated/second=5.20196e+06
+14. White moves: value=9, #expanded=19032299, #generated=102381465, seconds=19.0841, #generated/second=5.36474e+06
+13. Black moves: value=2, #expanded=21670151, #generated=128227305, seconds=25.8069, #generated/second=4.96873e+06
+12. White moves: value=9, #expanded=27702172, #generated=167203641, seconds=31.4279, #generated/second=5.32022e+06
+11. Black moves: value=4, #expanded=78288598, #generated=519656450, seconds=98.5151, #generated/second=5.27489e+06
+10. White moves: value=7, #expanded=47173518, #generated=324796070, seconds=62.2194, #generated/second=5.22018e+06
+9. Black moves: value=0, #expanded=140823498, #generated=1017674659, seconds=192.757, #generated/second=5.27956e+06
+8. White moves: value=3, #expanded=94378789, #generated=716951431, seconds=138.187, #generated/second=5.18825e+06
+7. Black moves: value=-2, #expanded=112591078, #generated=893439289, seconds=170.805, #generated/second=5.23074e+06
+6. White moves: value=1, #expanded=105420674, #generated=819962409, seconds=160.683, #generated/second=5.10298e+06
+5. Black moves: value=-4, #expanded=55607640, #generated=438014983, seconds=86.9406, #generated/second=5.03809e+06
+4. White moves: value=1, #expanded=18224696, #generated=137693336, seconds=28.2124, #generated/second=4.8806e+06
+3. Black moves: value=-2, #expanded=11229573, #generated=84303544, seconds=17.9382, #generated/second=4.69966e+06
+2. White moves: value=3, #expanded=4364130, #generated=31567814, seconds=6.73779, #generated/second=4.68519e+06
+1. Black moves: value=-2, #expanded=2480433, #generated=17456740, seconds=3.98608, #generated/second=4.37942e+06

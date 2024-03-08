@@ -198,13 +198,13 @@ int main(int argc, const char **argv) {
 
         try {
             if( algorithm == 1 ) {
-                value = negamax(pv[i], 1, color, use_tt);
+                value = negamax(pv[i], 16, color, use_tt);
             } else if( algorithm == 2 ) {
-                value = negamax(pv[i], 1, -200, 200, color, use_tt);
+                value = negamax(pv[i], 16, -200, 200, color, use_tt);
             } else if( algorithm == 3 ) {
-                value = scout(pv[i], 1, color, use_tt);
+                value = scout(pv[i], 16, color, use_tt);
             } else if( algorithm == 4 ) {
-                value = negascout(pv[i], 1, -200, 200, color, use_tt);
+                value = negascout(pv[i], 20, -200, 200, color, use_tt);
             }
         } catch( const bad_alloc &e ) {
             cout << "size TT[0]: size=" << TTable[0].size() << ", #buckets=" << TTable[0].bucket_count() << endl;

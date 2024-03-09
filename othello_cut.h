@@ -155,7 +155,7 @@ class state_t {
 };
 
 inline int state_t::value() const {
-    int v = -4;
+    int v = 0;
     for( int pos = 0; pos < DIM; ++pos ) {
         if( !is_free(pos) ) v += is_black(pos) ? 1 : -1;
     }
